@@ -10,6 +10,6 @@ fetch(url)
         throw new Error('Hubo un error...')
         
     })
-    .then( data => console.log(data)) //vamos anidando 'then's para esperar la respuesta de la API
+    .then( data => console.log(data)) //vamos anidando 'then's para esperar la respuesta de la API, ya que los den esperan a que se cumpla la instruccion anterior antes de pasar a la siguiente
     .catch(error =>  console.log(error.message))
 
